@@ -1,6 +1,6 @@
 {% set name = "backoff" %}
-{% set version = "1.4.3" %}
-{% set sha256 = "bc8ef5a3b0cc7e90d56dd4d9d385557ada1a6dbdfcdd2b44038beeabae119038" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "c1402291d7faca70ac3f2f7241e8942eb527f94945c7b2293030cfb6ce5a7805" %}
 
 package:
   name: {{ name|lower }}
