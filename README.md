@@ -18,14 +18,15 @@ dynamically polling resources for externally generated content.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/backoff-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/backoff-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/backoff-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/backoff-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/backoff-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/backoff-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/backoff-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/backoff-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/backoff/badges/version.svg)](https://anaconda.org/conda-forge/backoff)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/backoff/badges/downloads.svg)](https://anaconda.org/conda-forge/backoff)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-backoff-green.svg)](https://anaconda.org/conda-forge/backoff) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/backoff.svg)](https://anaconda.org/conda-forge/backoff) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/backoff.svg)](https://anaconda.org/conda-forge/backoff) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/backoff.svg)](https://anaconda.org/conda-forge/backoff) |
 
 Installing backoff
 ==================
