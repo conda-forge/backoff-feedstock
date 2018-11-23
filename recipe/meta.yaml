@@ -1,6 +1,6 @@
 {% set name = "backoff" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "e3df718a774c456a516f7c88516e47a9f2d02aa562943cdfa274c439e9dbbfde" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "b3a19ad74302fd8e8307239526b57bb338183ac690912d3fcdaa9f8ecff83a3d" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
