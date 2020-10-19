@@ -1,31 +1,36 @@
 {% set name = "backoff" %}
-{% set version = "1.8.0" %}
-{% set sha256 = "c7187f15339e775aec926dc6e5e42f8a3ad7d3c2b9a6ecae7b535000f70cd838" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: b8fba021fac74055ac05eb7c7bfce4723aedde6cd0a504e5326bcb0bdd6d19a4
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv
+
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
+    - poetry >=0.12
   run:
-    - python
+    - python >=3.5
 
 test:
   imports:
     - backoff
+  commands:
+    - pip check
+  requires:
+    - pip
+
 
 about:
   home: https://github.com/litl/backoff
@@ -44,3 +49,4 @@ extra:
   recipe-maintainers:
     - gatesn
     - bgreen-litl
+    - synapticarbors
