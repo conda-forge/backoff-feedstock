@@ -1,5 +1,5 @@
 {% set name = "backoff" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b8fba021fac74055ac05eb7c7bfce4723aedde6cd0a504e5326bcb0bdd6d19a4
+  sha256: dfaca81d40554e271a53a5f0e7c920100c948d38f5448600de0eab551fcd4fed
 
 build:
   noarch: python
@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Function decoration for backoff and retry'
+  summary: Function decoration for backoff and retry
   description: |
     This module provides function decorators which can be used to wrap a function such that it will be retried until
     some condition is met. It is meant to be of use when accessing unreliable resources with the potential for
