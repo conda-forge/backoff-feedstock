@@ -1,5 +1,5 @@
 {% set name = "backoff" %}
-{% set version = "1.11.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ccb962a2378418c667b3c979b504fdeb7d9e0d29c0579e3b13b86467177728cb
+  sha256: 9305c4ddde0c015d866895d7f3a660af2f2f25742d900e53e0903aa8c092b57c
 
 build:
   noarch: python
